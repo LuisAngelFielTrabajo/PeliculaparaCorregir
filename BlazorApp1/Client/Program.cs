@@ -1,3 +1,4 @@
+using BlazorApp1.Client.Helpers;
 using BlazorApp1.Client.Repositorios;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -28,7 +29,7 @@ namespace BlazorApp1.Client
         {
            
             services.AddScoped<IRepositorio, Repositorio>();
-
+            services.AddScoped<IMostrarMensajes, MostrarMensajes>();
         }
     }
 }
