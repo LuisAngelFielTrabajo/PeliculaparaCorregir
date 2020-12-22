@@ -10,7 +10,7 @@
 
     private async Task Crear()
     {
-        var httpresponse = await repositorio.Post("api/genero", Genero);
+        var httpresponse = await repositorio.Post("api/generos", Genero);
         if (httpresponse.Error)
         {
             var body = await httpresponse.HttpResponseMessage.Content.ReadAsStringAsync();
